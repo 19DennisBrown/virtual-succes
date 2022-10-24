@@ -1,0 +1,170 @@
+*{
+    box-sizing:border-box;
+    border-collapse:collapse;
+}
+
+body{
+    box-sizing:border-box;
+    background-color:violet;
+    margin:0;    
+    padding:0;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+#container{
+    height:100vh;
+}
+header{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    top:0;
+    left:0;
+    right:0;
+    height:100px;
+    background-color: black;
+}
+header  ul{
+    margin-left:80px;
+    margin-right:20px;
+    display:flex;
+    place-items:center;
+    flex-direction:row;
+    justify-content:space-between;
+}
+header  ul  li{
+    list-style:none;
+    border-radius:10%;
+    
+    background:rgba(238, 215, 7, 0.199);
+    color:orange;
+    font-size:21px;
+    text-decoration:underline;
+}
+header  ul  li:hover{
+    background-color: aqua;
+    color:black;
+    border:2px  solid green;
+    transition:0.35s;
+}
+header  ul  li  a{
+    font-size:18px;
+    color:yellow;
+}
+header  ul  li  a:hover{
+    font-size:36px;
+    color:green;
+    transition: 1.5s;
+}
+
+navbar{
+    position:fixed;
+    top:100px;
+    left:0;
+    bottom:0;
+    width:200px;
+    display:grid;
+    grid-gap:2px;
+    background:linear-gradient(
+        45deg,
+        brown,
+        maroon
+    );
+}
+navbar  div{
+    border:none;
+    padding:0  auto;
+    color:blueviolet;
+    font-weight:bold;
+    font-size:18px;
+    display:grid;
+    place-items:center;
+}
+navbar  div:hover{
+    border:2px    solid   black;
+    background-color: white;
+    
+    margin-bottom:3px;
+    transition:2s;
+}
+#main{
+    margin-left:210px;
+    margin-top:150px;
+    margin-bottom:130px;
+}
+
+  
+
+#main   #section-A{
+    display:grid;
+}
+#main   #section-A  .name{
+    display:inline-block;
+    padding:0;
+    font-size:100px;
+   margin:0;
+}
+#main   #section-A  .success-wish{
+    display:inline-block;
+    font-size:20px;
+    
+}
+#main   #section-A  .career{
+    padding:0;
+    font-size:30px;
+}
+span{
+    color:orange;
+}
+#main   #section-B{
+    display:flex;
+    justify-content:space-between;
+}
+#main  #section-B  div{
+    
+    background:rgb(82, 50, 56);
+    padding:50px;
+    border-radius:25%;
+    border-width:18px;
+    border-color:linear-gradient(
+        rgb(82, 50, 56),
+        rgb(148, 111, 118),
+        rgb(202, 186, 189)
+    );
+    border-style:solid;
+}
+#main   aside{
+    display:grid;
+    place-items:center;
+    padding:57px;
+    border-radius:30%;
+    background-color:white;
+    color:pink;
+}
+footer{
+    
+    background:black;   
+    
+    display:grid;
+    place-items:center;
+}
+footer  p{
+    margin-bottom:0;
+    
+}
+footer  ol{
+   display:flex;
+}
+footer  ol  li{
+    margin-top:0;
+    list-style:none;
+    font-weight:bold;
+    color:white;
+}
+footer  ol  li  img{
+   height: 30px;
+   border-radius:50%;
+   margin-right:10px;
+}
+footer  h4{
+    color:white;
+}
